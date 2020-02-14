@@ -1,0 +1,28 @@
+{{template "header"}}
+
+<div id="content">
+    <form method="POST" action="/"> 
+               <div id="text-input">
+                    <textarea cols="50" rows="2" name="text" minlength="1" maxlength="100" placeholder="input your text here" required></textarea>          
+               </div>
+             <div id="select-font">
+                    <label for="selector">Choose font:</label><br>
+                    <select name="selector">
+                        <option value="standard">standard</option>
+                        <option value="shadow">shadow</option>
+                        <option value="thinkertoy">thinkertoy</option>
+                    </select>
+              </div>
+              <div id="start-button">
+                <input type="submit" value="&#9773;">
+              </div>                
+            </form>
+            </div>
+
+
+<div id="output">
+    <pre>{{.}}</pre>
+</div>
+ 
+ 
+{{template "footer"}}

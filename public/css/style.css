@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 50px;
+    max-width: 960px;   
+    background-color: gray;
+    font-family: 'IBM Plex Mono', monospace;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header { 
+    flex: 1 0 auto;
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 1px;
+    min-height: 40px;
+    max-height: 10%;
+}
+footer {
+    flex: 0 0 auto;
+    height: 10%;
+    max-height: 40px;
+    margin-bottom: 0px; 
+    margin-top: auto;
+    bottom: 0px;
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 1px;
+    max-width: 960px;
+    width: 100%;
+
+    
+}
+
+footer img {
+    max-width: 24px;
+    max-height: 24px;
+}
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    background-color: black;
+    margin-bottom: 1px;
+    display: table;
+    table-layout: fixed;
+    border-spacing: 2px;
+   
+    
+}
+#output {
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    /* background-color: bisque; */
+}
+#box {
+    /* width: 100%; */
+    /* max-width: 1500px; */
+   /* height: 100%; */
+    /* overflow-x: auto;
+    overflow-y: auto */
+    /* background-color: yellow; */
+}
+textarea {
+    font-size: 20px;
+    width: 100%;
+    margin: 5px 5px;
+    resize: none;
+    background-color: black;
+    color: rgb(153, 255, 0);
+    font-size: 250%;
+    vertical-align: middle;
+}
+
+::placeholder {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-align: center;
+
+    color: gray;
+    
+}
+
+#text-input {
+   display: table-cell;
+   width: 60%;
+}
+
+#select-font{
+    display: table-cell;
+    width: 30%;
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+
+#start-button{
+    text-align: center;
+    display: table-cell;
+    width: 10%;
+    position: relative;
+    vertical-align: middle;
+}
+
+label {
+    /* font-size: 100%; */
+    width: 65%;
+}
+select {
+    font-size: 150%;
+    background-color: gray;
+    color: black;
+    width: 75%;
+}
+
+select option {
+    text-align: center;
+}
+input {
+    /* padding: 25%;   */
+    /* background: url("https://01.alem.school/assets/img/logo.png") no-repeat center; */
+    /* background-size: 100%; */
+    background-color: gray;
+    border: gray 1px solid;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* opacity: 0.60;
+    border: 0; */
+    font-size: 50px;
+    
+}
+
+input:hover {
+    cursor: crosshair;
+    color: red;
+    background-color: black;
+    border: red solid 1px;
+
+}
+#error {
+    height: 100%;
+    width: 100%;
+}
+#error p {
+    text-align: center;
+    vertical-align: middle;
+}
+#error a {
+
+    margin: 3px;
+    padding: 3px;
+    border-radius: 4px;
+    border: black solid 1px;
+    text-decoration: none;
+    color: black;
+    background-color: #3d3d3d;
+}
+#error a:hover {
+    background-color: black;
+    color: white;
+}
