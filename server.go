@@ -1,7 +1,7 @@
 package main
 
 import (
-	 "fmt"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"net/url"
@@ -138,7 +138,7 @@ func Error(w http.ResponseWriter, error2 string, code int) {
 	w.Header().Set("Content-Type", "text/plain; charset=utf-8")
 	w.Header().Set("X-Content-Type-Options", "nosniff")
 	w.WriteHeader(code)
-//?w.WriteBody(code)
+	//?w.WriteBody(code)
 	//w.Body(./public/error.html)
 	//GetInfo(w, "error.html", "ERROR 400")
 	//fmt.Fprintln(w, GetInfo(w , "error.html", "ERROR 404"))
